@@ -27,9 +27,9 @@ websitelink: "Dog Days Rescue Charity"
 function Charity ()  {
   return (
     <div>
-  <h1>
+  <p>
     Raised money and took part in the polar plunge for the Special Olympics
-  </h1>
+  </p>
          <img
              className="testimonial"
    src={CharityWork}
@@ -38,17 +38,8 @@ function Charity ()  {
         borderRadius: '20px',
         boxShadow: '15px 15px 15px 15px rgb(20 20 20 / 60%)',
         width: '200px'}}
-           
-           />
-        
-        
-      
-          
-       
-       
-
-
-    <h1>Support Website for Dog Days Rescue</h1>       
+      />
+    <p>Support Website for Dog Days Rescue</p>       
            <ButtonDogDaysPositive/>
         
          <p></p>
@@ -63,7 +54,7 @@ function Charity ()  {
         boxShadow: '15px 15px 15px 15px rgb(20 20 20 / 60%)',
         width: '200px'}}
            />
-          <h1>Raised money and ran in the Susan G Komen Race For The Cure</h1>
+          <p>Raised money and ran in the Susan G Komen Race For The Cure</p>
          <p></p>
          <p></p>
          <img
