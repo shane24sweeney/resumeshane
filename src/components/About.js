@@ -1,14 +1,22 @@
 import React from "react";
 import  "./Testimonial.css";
 import Tropies from "./HeadShot/Tropies.png";
-import {   Image } from 'semantic-ui-react';
+
 
 function About (){
   
   return (
     <section id="about">
    
-  
+   <img
+             className="about"
+   src={Tropies}
+   style={{ height: '10%',
+        padding: '15px', 
+        borderRadius: '20px',
+        boxShadow: '15px 15px 15px 15px rgb(20 20 20 / 60%)',
+        width: '200px'}}
+      />
         
       
          <p>

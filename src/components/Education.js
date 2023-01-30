@@ -28,53 +28,52 @@ degree: "B.A. Mathematical Studies and Sociology - 1995/1998"
   return (
     <section id="education" >
   
-      
-        
-    
-
     <img
         className="testimonial"
 src={NCState} 
         alt="Image One"
-        style={{ alignSelf: 'center' }}
+        style={{ height: '10%',
+        padding: '15px', 
+        borderRadius: '20px',
+        boxShadow: '15px 15px 15px 15px rgb(20 20 20 / 60%)',
+        width: '200px'}}
       />
 
-       {educationdescript[0].degree}
+      <p>{educationdescript[0].degree}</p> 
+
+       <img
+        className="testimonial"
+src={UCC} 
+        alt="Image Two"
+        style={{ height: '10%',
+        padding: '15px', 
+        borderRadius: '20px',
+        boxShadow: '15px 15px 15px 15px rgb(20 20 20 / 60%)',
+        width: '200px'}}
+      />
+
+<p>{educationdescript[1].degree}</p>
       
     
       <div >
 </div>
-
-
-
-
     
-  
-    <img
+<img
         className="testimonial"
-src={UCC}
-        alt="Image Two"
+src={UCC} 
+        alt="Image Three"
+        style={{ height: '10%',
+        padding: '15px', 
+        borderRadius: '20px',
+        boxShadow: '15px 15px 15px 15px rgb(20 20 20 / 60%)',
+        width: '200px'}}
       />
-     
-       {educationdescript[1].degree}
-     
-    
-      <div >
-</div>
 
-  
-    <img
-        className="testimonial"
-src={UCC}
-        alt="Image One"
-      />
-     
-    <div >
-    
-       {educationdescript[2].degree}
+<p>{educationdescript[2].degree}</p>
    
 
 
+       <div >
 </div>
 
 

@@ -1,10 +1,16 @@
 import React from 'react';
 import {  Nav, NavbarBrand} from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faHome,   faAddressCard,  faChess, faMars, faUniversity, faBinoculars, faMedal, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { Button } from "semantic-ui-react";
+
 
 function Navigation() {
+
+  const theme = {
+    blue: {
+      default: "#3f51b5",
+      hover: "#283593"
+    }};
 
   return (
     <div style={{color:'white'}}>
@@ -12,43 +18,36 @@ function Navigation() {
             <Nav className="ml-auto">
             <NavbarBrand>
             <NavLink to="/home" className="nav-link">
-            <FontAwesomeIcon icon={faHome} 
-            vertical color={'black'} />Home </NavLink> 
+            <button style={theme}>Home</button></NavLink> 
               </NavbarBrand>
               <NavbarBrand>
                 <NavLink to="/contact" className="nav-link">
-                <FontAwesomeIcon icon={faAddressCard} 
-            vertical color={'black'} /> Contact 
+               <button style={theme}>Contact</button>  
                 </NavLink>
               </NavbarBrand>
               <NavbarBrand>
-                <NavLink to="/about" className="nav-link">
-                <FontAwesomeIcon icon={faChess} 
-            vertical color={'black'} />  About 
+                <NavLink to="/about" className="nav-link"> 
+                <button style={theme}>About</button>
                 </NavLink>
               </NavbarBrand>
               <NavbarBrand>
                 <NavLink to="/fullResume" className="nav-link">
-                <FontAwesomeIcon icon={faMars} 
-            vertical color={'black'} /> Full Resume 
+              <button style={theme}>Full Resume</button>
                 </NavLink>
               </NavbarBrand>
               <NavbarBrand>
                 <NavLink to="/testimonials" className="nav-link">
-                <FontAwesomeIcon icon={faMedal} 
-            vertical color={'black'} /> Testimonials 
+             <button style={theme}>Testimonials</button>  
                   </NavLink>
               </NavbarBrand>
               <NavbarBrand>
                 <NavLink to="/education" className="nav-link">
-                <FontAwesomeIcon icon={faUniversity} 
-            vertical color={'black'} />Education 
+             <button style={theme}>Education</button> 
                 </NavLink>
               </NavbarBrand>
               <NavbarBrand>
                 <NavLink to="/charity" className="nav-link">
-                <FontAwesomeIcon icon={faHeart} 
-            vertical color={'black'} /> Charity Work 
+            <button style={theme}>Charity Work</button> 
                   </NavLink>
                   </NavbarBrand>
             </Nav>
